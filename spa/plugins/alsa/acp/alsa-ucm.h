@@ -56,6 +56,9 @@ typedef void snd_use_case_mgr_t;
 /** For devices: Playback switch e.g PlaybackSwitch */
 #define PA_ALSA_PROP_UCM_PLAYBACK_SWITCH            "alsa.ucm.playback.switch"
 
+/** For devices: Playback control switch */
+#define PA_ALSA_PROP_UCM_PLAYBACK_CTL_SWITCH        "alsa.ucm.playback.ctlswitch"
+
 /** For devices: Playback mixer device name  */
 #define PA_ALSA_PROP_UCM_PLAYBACK_MIXER_DEVICE      "alsa.ucm.playback.mixer.device"
 
@@ -94,6 +97,9 @@ typedef void snd_use_case_mgr_t;
 
 /** For devices: Capture switch e.g CaptureSwitch */
 #define PA_ALSA_PROP_UCM_CAPTURE_SWITCH             "alsa.ucm.capture.switch"
+
+/** For devices: Capture control switch */
+#define PA_ALSA_PROP_UCM_CAPTURE_CTL_SWITCH         "alsa.ucm.capture.ctlswitch"
 
 /** For devices: Capture mixer device name  */
 #define PA_ALSA_PROP_UCM_CAPTURE_MIXER_DEVICE       "alsa.ucm.capture.mixer.device"
@@ -208,6 +214,9 @@ struct pa_alsa_ucm_device {
      * make this a hashmap of verb -> per-verb-device-properties-struct. */
     pa_hashmap *playback_volumes;
     pa_hashmap *capture_volumes;
+
+    pa_hashmap *playback_switches;
+    pa_hashmap *capture_switches;
 
     pa_alsa_mapping *playback_mapping;
     pa_alsa_mapping *capture_mapping;
