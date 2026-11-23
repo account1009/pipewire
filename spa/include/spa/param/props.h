@@ -112,6 +112,8 @@ enum spa_prop {
 	SPA_PROP_exposure,
 	SPA_PROP_gain,
 	SPA_PROP_sharpness,
+	SPA_PROP_autofocusMode,
+	SPA_PROP_lensPosition,
 
 	SPA_PROP_START_Other	= 0x80000,	/**< other properties */
 	SPA_PROP_params,			/**< simple control params

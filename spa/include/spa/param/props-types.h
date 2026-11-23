@@ -78,6 +78,8 @@ static const struct spa_type_info spa_type_props[] = {
 	{ SPA_PROP_exposure, SPA_TYPE_Int, SPA_TYPE_INFO_PROPS_BASE "exposure", NULL },
 	{ SPA_PROP_gain, SPA_TYPE_Float, SPA_TYPE_INFO_PROPS_BASE "gain", NULL },
 	{ SPA_PROP_sharpness, SPA_TYPE_Float, SPA_TYPE_INFO_PROPS_BASE "sharpness", NULL },
+	{ SPA_PROP_autofocusMode, SPA_TYPE_Int, SPA_TYPE_INFO_PROPS_BASE "autofocusMode", NULL },
+	{ SPA_PROP_lensPosition, SPA_TYPE_Float, SPA_TYPE_INFO_PROPS_BASE "lensPosition", NULL },
 
 	{ SPA_PROP_params, SPA_TYPE_Struct, SPA_TYPE_INFO_PROPS_BASE "params", NULL },
 	{ 0, 0, NULL, NULL },

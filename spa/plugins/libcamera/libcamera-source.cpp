@@ -749,6 +749,8 @@ const struct {
 	{ libcamera::controls::EXPOSURE_TIME, SPA_PROP_exposure },
 	{ libcamera::controls::ANALOGUE_GAIN, SPA_PROP_gain },
 	{ libcamera::controls::SHARPNESS, SPA_PROP_sharpness },
+	{ libcamera::controls::AF_MODE, SPA_PROP_autofocusMode },
+	{ libcamera::controls::LENS_POSITION, SPA_PROP_lensPosition },
 };
 
 uint32_t control_to_prop_id(uint32_t control_id)
